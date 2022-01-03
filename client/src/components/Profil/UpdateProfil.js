@@ -14,7 +14,7 @@ const UpdateProfil = () => {
   const dispatch = useDispatch();
 
   const handleUpdate = () => {
-    dispatch(updateBio(userData._id, bio));
+    dispatch(updateBio(userData.id, bio));
     setUpdateForm(false);
   };
 
@@ -54,7 +54,6 @@ const UpdateProfil = () => {
           </div>
           <h4>Menbre depuis le : {dateParser(userData.createdAt)}</h4>
           <DeleteCard id={userData.id} action={"deleteUser"} />
-        
         </div>
       </div>
     </div>

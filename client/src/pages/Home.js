@@ -9,15 +9,20 @@ const Home = () => {
   const uid = useContext(UidContext);
 
   return (
-    <div className="home">
-      <LeftNav />
-      <div className="main">
-        <div className="home-header">
-          {uid ? <NewPostForm /> : <Log signin={true} signup={false} />}
-        </div>
-        {uid && <Thread />}
+    <>
+      <div className="img-container-home">
+        <img src="./img/icon-left-font-monochrome-black.svg" alt="img-log" />
       </div>
-    </div>
+      <div className="home">
+        <LeftNav />
+        <div className="main">
+          <div className="home-header">
+            {uid ? <NewPostForm /> : <Log signin={true} signup={false} />}
+          </div>
+          {uid && <Thread />}
+        </div>
+      </div>
+    </>
   );
 };
 

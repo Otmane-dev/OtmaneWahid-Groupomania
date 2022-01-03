@@ -8,12 +8,12 @@
 
   .log-container {
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 60% 40%;
+    //display: grid;
+    //grid-template-columns: 60% 40%;
 
-    @media screen and(max-width: 885px) {
-      grid-template-columns: 1fr;
-    }
+    //@media screen and(max-width: 885px) {
+     // grid-template-columns: 1fr;
+   // }
   }
 
   .connection-form {
@@ -107,6 +107,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin: 20px;
 
     img {
       

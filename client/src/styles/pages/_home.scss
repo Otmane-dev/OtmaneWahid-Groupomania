@@ -1,3 +1,12 @@
+.img-container-home{
+  display: flex;
+    justify-content: center;
+    
+    margin: 46px;
+    @media screen and(max-width: 700px) {
+      display: none;
+    }
+}
 .home {
   display: grid;
   max-width: 1200px;

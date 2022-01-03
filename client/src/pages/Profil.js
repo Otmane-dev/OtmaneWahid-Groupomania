@@ -8,23 +8,14 @@ const Profil = () => {
 
   return (
     <div className="profil-page">
-         <div className="img-container">
-            <img
-              src="./img/icon-left-font-monochrome-black.svg"
-              alt="img-log"
-            />
-          </div>
+      <div className="img-container">
+        <img src="./img/icon-left-font-monochrome-black.svg" alt="img-log" />
+      </div>
       {uid ? (
         <UpdateProfil />
       ) : (
         <div className="log-container">
           <Log signin={false} signup={true} />
-          <div className="img-container">
-            <img
-              src="./img/icon-left-font-monochrome-black.svg"
-              alt="img-log"
-            />
-          </div>
         </div>
       )}
     </div>

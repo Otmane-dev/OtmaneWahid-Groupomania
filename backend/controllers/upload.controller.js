@@ -25,10 +25,3 @@ exports.uploadProfil = (req, res) => {
   });
 };
 
-/* exports.getProfilPic = (req, res) => {
-  User.findAll({ where: { id: req.body.userId } })
-    .then((user) => {
-      res.status(200).json(user[0].dataValues.picture);
-    })
-    .catch((error) => res.status(400).json({ message: error }));
-}; */

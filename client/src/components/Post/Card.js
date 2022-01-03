@@ -17,7 +17,7 @@ const Card = ({ post }) => {
 
   const updateItem = () => {
     if (textUpdate) {
-      dispatch(updatePost(post._id, textUpdate));
+      dispatch(updatePost(post.id, textUpdate));
     }
     setIsUpdated(false);
   };
@@ -27,7 +27,7 @@ const Card = ({ post }) => {
   }, [usersData]);
 
   return (
-    <li className="card-container" key={post._id}>
+    <li className="card-container" key={post.id}>
       {isLoading ? (
         <i className="fa fa-spinner fa-spin"></i>
       ) : (

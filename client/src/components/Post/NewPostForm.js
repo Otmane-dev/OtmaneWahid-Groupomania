@@ -17,7 +17,7 @@ const NewPostForm = () => {
   const handlePost = async () => {
     if (message || postPicture || video) {
       const data = new FormData();
-      data.append("posterId", userData._id);
+      data.append("posterId", userData.id);
       data.append("message", message);
       if (file) data.append("file", file);
       data.append("video", video);
