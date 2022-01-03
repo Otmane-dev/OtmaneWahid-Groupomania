@@ -63,13 +63,13 @@ const EditDeleteComment = ({ comment, postId }) => {
       
     </div>
     {(isAuthor  || userData.isAdmin) && (
-    <span 
+    <span id="container-supp-com"
     onClick={() => {
       if (window.confirm("Voulez-vous supprimer se commentaire ?")) {
         handleDelete();
       }
     }}
-  ><img src="./img/icons/trash.svg" alt="edit-comment" />
+  ><img src="./img/icons/trash.svg" alt="edit-comment" id="supprimer-commenteire" />
     
   </span>)}</>
   );
