@@ -14,7 +14,9 @@ const Home = () => {
         <img src="./img/icon-left-font-monochrome-black.svg" alt="img-log" />
       </div>
       <div className="home">
-        <LeftNav />
+
+      {uid &&<LeftNav />  }
+      {!uid && <div></div>  }
         <div className="main">
           <div className="home-header">
             {uid ? <NewPostForm /> : <Log signin={true} signup={false} />}

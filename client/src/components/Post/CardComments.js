@@ -38,9 +38,7 @@ const CardComments = ({ post }) => {
                   !isEmpty(usersData[0]) &&
                   usersData
                     .map((user) => {
-                      
                       if (user.id === comment.userId) return user.picture;
-                     
                     })
                     .join("")
                 }
@@ -54,6 +52,7 @@ const CardComments = ({ post }) => {
                 </div>
                 <span>{timestampParser(comment.createdAt)}</span>
               </div>
+
               <p>{comment.content}</p>
               <EditDeleteComment comment={comment} postId={post.id} />
             </div>
