@@ -53,12 +53,7 @@ textarea {
     box-shadow: 0 0 4px rgba(0, 22, 44, 0.1);
   }
 }
-.btn-delete-profil{
-  display: grid;
-    justify-items: center;
-    cursor: pointer;
-    color: red;
-}
+
 button,
 input[type="submit"] {
   background: $color-2;

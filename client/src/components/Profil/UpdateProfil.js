@@ -54,6 +54,7 @@ const UpdateProfil = () => {
           </div>
           <h4>Menbre depuis le : {dateParser(userData.createdAt)}</h4>
           <DeleteCard id={userData.id} action={"deleteUser"} />
+          <span>Supprimer profil</span>
         </div>
       </div>
     </div>
