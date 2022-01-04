@@ -28,8 +28,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 
-//const connection = await mysql.createConnection({ host:"localhost", port:8080, user:"root", password:process.env.DB_PASS});
-   // await connection.query(`CREATE DATABASE IF NOT EXISTS \`groupomania\`;`);
+/*const connection = await mysql.createConnection({ host:"localhost", port:8080, user:"root", password:process.env.DB_PASS});
+    await connection.query(`CREATE DATABASE IF NOT EXISTS \`groupomania\`;`);*/
 
 
 /*db.sequelize.sync({ force: true }).then(() => {

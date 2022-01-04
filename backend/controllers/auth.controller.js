@@ -12,19 +12,6 @@ const createToken = (id) => {
   });
 };
 
-/*module.exports.signUp = async (req, res) => {
-  const {pseudo, email, password} = req.body
-
-  try {
-    const user = await User.create({pseudo, email, password });
-    res.status(201).json({ user: user._id});
-  }
-  catch(err) {
-    const errors = signUpErrors(err);
-    res.status(200).send({ errors })
-  }
-}*/
-
 exports.signUp = async (req, res, next) => {
   User.findAll({
     where: { email: req.body.email },
