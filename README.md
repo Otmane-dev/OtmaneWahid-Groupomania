@@ -38,4 +38,4 @@ puis : npm install ,
 assurez vous d'avoir nodemon, 
 ensuite lancé le backend avec : nodemon server,
 
-toujours dans le backend aller au fichier server.js décommenté la ligne de 31 à 31 et de 35 à 37, se qui théoriquement va créer votre data base et vos tables après avois vérifier recommenté ces ligne sinon a chaque enregistrement toute la data base et tables serons recréer et supprimeront vos donnés 
+toujours dans le backend aller au fichier server.js décommenté la ligne de 30 à 32 , se qui théoriquement va créer vos tables après avois vérifier recommenté ces ligne sinon a chaque enregistrement toute les tables soit recréer et supprimeront vos donnés 

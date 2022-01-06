@@ -4,7 +4,10 @@ const cookieParser = require("cookie-parser");
 const userRoutes = require("./routes/user.routes");
 const postRoutes = require("./routes/post.routes");
 const db = require("./models");
-const mysql = require('mysql2/promise');
+const mysql = require("mysql2/promise");
+
+
+
 
 require("dotenv").config({ path: ".env" });
 
@@ -27,11 +30,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-
-/*const connection = await mysql.createConnection({ host:"localhost", port:8080, user:"root", password:process.env.DB_PASS});
-    await connection.query(`CREATE DATABASE IF NOT EXISTS \`groupomania\`;`);*/
-
-
 /*db.sequelize.sync({ force: true }).then(() => {
   console.log("Drop and re-sync db.");
 });*/
@@ -47,7 +45,6 @@ app.get("/jwtid", requireAuth, (req, res) => {
 app.use("/api/user", userRoutes);
 app.use("/api/post", postRoutes);
 app.use("/images", express.static("images"));
-
 
 // server
 app.listen(process.env.PORT, () => {
